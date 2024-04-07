@@ -52,6 +52,7 @@ export default function App() {
         calculator()
         return
       case '+/-':
+        setCurrentNumber(currentNumber * -1)
         return
     }
 
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#270352"
   },
   resultText: {
-    color: "#ffffff",
+    color: "white",
     fontSize: 32,
     fontWeight: "bold",
     padding: 12,
